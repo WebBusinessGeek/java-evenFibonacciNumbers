@@ -9,11 +9,5 @@ import static org.junit.Assert.*;
  */
 public class AlgorithmsTest {
 
-    @Test
-    public void shouldReturnFibonacciSequenceUpToLimitSpecified() {
-        Algorithms algorithms = new Algorithms();
-        int[] correctFibonacciUpTo90 = {1, 2, 3, 5, 8, 13, 21, 34, 55, 89};
-        assertEquals(correctFibonacciUpTo90, algorithms.findFibonacciWithLimit(1, 2, 90));
-    }
-
+    //it should
 }
