@@ -5,6 +5,15 @@ import java.util.ArrayList;
 public class Algorithms {
 
     /*
+    * Returns the sum of all even numbers in a fibonacci sequence
+    * */
+    public int sumOfAllEvenNumbersInFibonacciSequence(int firstInteger, int secondIntger, int limit) {
+        ArrayList<Integer> fibonacciSequence = this.generateFibonacciSequence(firstInteger, secondIntger, limit);
+        ArrayList<Integer> allEvenNumbersFromSequence = this.extractAllEvenNumbersFromArrayList(fibonacciSequence);
+        return this.sumOfAllIntegersInArrayList(allEvenNumbersFromSequence);
+    }
+
+    /*
     * Returns an array list fibonacci sequence of passed in integers up to the specified limit.
     * */
     public ArrayList<Integer> generateFibonacciSequence(int firstInteger, int secondInteger, int limit) {

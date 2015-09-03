@@ -8,8 +8,14 @@ import static org.junit.Assert.*;
 
 public class AlgorithmsTest {
 
+    @Test
     public void itShouldReturnTheSumOfAllEvenNumbersInFibonacciSequenceUpToSpecifiedLimit() {
-        
+        Algorithms algorithms = new Algorithms();
+        int firstInteger = 1;
+        int secondInteger = 2;
+        int limit = 4000000;
+        int result = algorithms.sumOfAllEvenNumbersInFibonacciSequence(firstInteger, secondInteger, limit);
+        assertEquals(4613732, result);
     }
 
 
