@@ -6,9 +6,6 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by MacBookEr on 9/2/15.
- */
 public class AlgorithmsTest {
 
     /*
@@ -19,10 +16,10 @@ public class AlgorithmsTest {
     public void itShouldReturnAFibonacciSequenceUpToSpecifiedLimit() {
         Algorithms algorithms = new Algorithms();
         ArrayList<Integer> fibonacciResult = algorithms.generateFibonacciSequence(1,2,90);
-
+        int lastIndex = fibonacciResult.size() - 1;
+        int result = fibonacciResult.get(lastIndex);
+        assertEquals(89, result);
     }
-
-
 
     @Test
     public void itShouldReturnSumOfLastTwoValuesInArrayList() {
@@ -37,20 +34,15 @@ public class AlgorithmsTest {
 
 
     /*
-    * TEST SUITE - SHOULD RETURN THE SUM OF ALL [EVEN, ODD, ALL] NUMBERS IN A COLLECTION
+    * TEST SUITE - SHOULD RETURN THE SUM OF ALL EVEN NUMBERS IN A COLLECTION
     * */
     @Test
-    public void itShouldReturnAllEvenNumbersInACollection() {
+    public void itShouldReturnAllEvenNumbersInAnArrayList() {
 
     }
 
     @Test
-    public void itShouldReturnAllOddNumbersInACollection() {
-
-    }
-
-    @Test
-    public void itShouldAddAllIntegersInACollection() {
+    public void itShouldAddAllIntegersInAnArrayList() {
 
     }
 
